@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="Hht-99-aXk" customClass="MZWColorListCell">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hht-99-aXk" id="vj2-pz-9mj">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="1wz-Mj-Uzm">
+                        <rect key="frame" x="25" y="28.5" width="120" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Ldc-YN-lj9"/>
+                            <constraint firstAttribute="width" constant="120" id="ZaO-Lp-f4N"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-t0-UN9">
+                        <rect key="frame" x="155" y="28.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-Ka-OtD">
+                        <rect key="frame" x="259" y="64" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <state key="normal" title="-" image="Minus.png">
+                            <color key="titleColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="minus:" destination="Hht-99-aXk" eventType="touchUpInside" id="761-2s-ktx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht2-KG-8tf">
+                        <rect key="frame" x="349" y="64" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <state key="normal" title="+" image="Plus.png">
+                            <color key="titleColor" red="1" green="0.036638199789999999" blue="0.086299329310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="plus:" destination="Hht-99-aXk" eventType="touchUpInside" id="Afz-e0-25e"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqr-Vg-QfO">
+                        <rect key="frame" x="155" y="58.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-EE-wMC">
+                        <rect key="frame" x="267" y="4" width="97" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkx-dO-nAC">
+                        <rect key="frame" x="217" y="27" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1wz-Mj-Uzm" firstAttribute="centerY" secondItem="vj2-pz-9mj" secondAttribute="centerY" id="M2z-gI-sWA"/>
+                    <constraint firstItem="ORb-t0-UN9" firstAttribute="leading" secondItem="1wz-Mj-Uzm" secondAttribute="trailing" constant="10" id="UdT-Dn-fcb"/>
+                    <constraint firstItem="Mqr-Vg-QfO" firstAttribute="top" secondItem="ORb-t0-UN9" secondAttribute="bottom" constant="12" id="bFt-Iy-lD0"/>
+                    <constraint firstItem="ORb-t0-UN9" firstAttribute="top" secondItem="1wz-Mj-Uzm" secondAttribute="top" id="cwz-o2-lej"/>
+                    <constraint firstItem="1wz-Mj-Uzm" firstAttribute="leading" secondItem="vj2-pz-9mj" secondAttribute="leadingMargin" constant="5" id="mBi-MT-RSF"/>
+                    <constraint firstItem="Mqr-Vg-QfO" firstAttribute="leading" secondItem="ORb-t0-UN9" secondAttribute="leading" id="oij-Fw-4gY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="foodImageView" destination="1wz-Mj-Uzm" id="1eN-12-QzS"/>
+                <outlet property="minus" destination="gdE-Ka-OtD" id="XC2-Gz-ouc"/>
+                <outlet property="month_saled" destination="Mqr-Vg-QfO" id="Cqg-oR-ayd"/>
+                <outlet property="name" destination="ORb-t0-UN9" id="2ED-ub-qfQ"/>
+                <outlet property="orderCountTF" destination="wkx-dO-nAC" id="adn-cA-I1V"/>
+                <outlet property="plus" destination="Ht2-KG-8tf" id="WNO-Xm-q4P"/>
+            </connections>
+            <point key="canvasLocation" x="-283" y="454"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="3.png" width="462" height="300"/>
+        <image name="Minus.png" width="64" height="64"/>
+        <image name="Plus.png" width="64" height="64"/>
+    </resources>
+</document>
